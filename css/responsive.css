@@ -1,0 +1,21 @@
+@media  (min-width: 996px) {
+    #header {
+        border-bottom: 1px solid #E7E7E7;
+        background-color: #fff;
+    }
+
+    #header .logo .p_logo {
+        display: inherit;
+    }
+
+    #header .logo .m_logo, #header .logo .vip_label {
+        display: none;
+    }
+
+    .nav_container {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+    }
+}
