@@ -1,4 +1,4 @@
-@media  (min-width: 996px) {
+@media (min-width: 1020px) {
     #header {
         border-bottom: 1px solid #E7E7E7;
         background-color: #fff;
@@ -12,7 +12,7 @@
         display: none;
     }
 
-    .nav_container {
+    #nav-container {
         width: 90%;
         margin: 0 auto;
         display: flex;
