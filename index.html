@@ -5,128 +5,447 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apkpure</title>
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 <body>
-    <header id="header">
-        <nav class="navbar navbar-expand-lg navbar-light" id="navbar-apkpure">
-            <div class="container-fluid" id="nav-container">
-                <a class="navbar-brand" href="#">
-                    <img src="https://static.apkpure.com/www/static/imgs/logo_new.png" alt="APKPure">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+<header id="header">
+    <nav class="navbar navbar-expand-lg navbar-light" id="navbar-apkpure">
+        <div class="container-fluid" id="nav-container">
+            <a class="navbar-brand" href="#">
+                <img src="https://static.apkpure.com/www/static/imgs/logo_new.png" alt="APKPure">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Trò chơi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Ứng dụng</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="articleDropDown" role="button"
+                           data-bs-toggle="dropdown" aria-expanded="false">
+                            Các bài báo
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="articleDropDown">
+                            <li><a class="dropdown-item" href="#">Tin Tức</a></li>
+                            <li><a class="dropdown-item" href="#">Nhận xét</a></li>
+                            <li><a class="dropdown-item" href="#">How To</a></li>
+                            <li><a class="dropdown-item" href="#">Chủ đề</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="productForDropDown" role="button"
+                           data-bs-toggle="dropdown" aria-expanded="false">
+                            Sản phẩm của
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="productForDropDown">
+                            <li><a class="dropdown-item" href="#">Ứng dụng apkPure</a></li>
+                            <li><a class="dropdown-item" href="#">Tải về apkPure</a></li>
+                            <li><a class="dropdown-item" href="#">window App</a></li>
+                            <li><a class="dropdown-item" href="#">iphone App</a></li>
+                            <li><a class="dropdown-item" href="#">Cửa hàng trò chơi</a></li>
+                            <li><a class="dropdown-item" href="#">Pre-registry</a></li>
+                            <li><a class="dropdown-item" href="#">Mở rộng scom</a></li>
+                            <li><a class="dropdown-item" href="#">TVOnic</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="search d-flex">
+                    <i class="fa fa-search"></i>
+                </form>
+                <div class="avatar">
+                    <a href="#">
+                        <img src="https://static.apkpure.com/www/static/imgs/no_login_v3.png" alt="" width="35"
+                             height="35">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<!-- Container chính -->
+<div class="container main-body">
+    <div class="row">
+        <!-- Cột cho Slider (Carousel) -->
+        <div class="col-lg-9 mb-3">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                </div>
+
+                <!-- Nội dung các slide -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://image.winudf.com/v2/image1/Y29tLmVuZmxpY2suYW5kcm9pZC5UZXh0Tm93X2Jhbm5lcl8xNzMzMjc0NzQwXzA3NA/banner.webp?w=360&fakeurl=1&type=.webp"
+                             class="d-block w-100" alt="First slide">
+                        <div class="carousel-caption d-flex justify-content-between align-items-center pt-3 pb-3 mt-3">
+                            <div class="d-flex align-items-center">
+                                <img src="https://image.winudf.com/v2/user/admin/YWRtaW5f5LyB5Lia5b6u5L-h5oiq5Zu-XzE3Mzk4NjM3NTY5NDU4LnBuZ18xNzM5ODY0MDE0NDkx/icon.webp?w=48&fakeurl=1&type=.webp"
+                                     alt="Honor of Kings"
+                                     class="me-3"
+                                     width="32" height="32">
+                                <div>
+                                    <h5 class="mb-1">Honor of Kings</h5>
+                                </div>
+                            </div>
+                            <div>
+                                <button class="btn btn-success" style="width: auto; height: 28px; font-size: 12px">Tải
+                                    về
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://static-sg.winudf.com/wupload/xy/aprojectadmin/og7m5fyT.jpg?imageMogr2/thumbnail/360x/format/webp"
+                             class="d-block w-100" alt="Second slide">
+                        <div class="carousel-caption d-flex justify-content-between align-items-center pt-3 pb-3 mt-3">
+                            <div class="d-flex align-items-center">
+                                <img src="https://image.winudf.com/v2/user/admin/YWRtaW5f5LyB5Lia5b6u5L-h5oiq5Zu-XzE3Mzk4NjM3NTY5NDU4LnBuZ18xNzM5ODY0MDE0NDkx/icon.webp?w=48&fakeurl=1&type=.webp"
+                                     alt="Honor of Kings"
+                                     class="me-3"
+                                     width="32" height="32">
+                                <div>
+                                    <h5 class="mb-1">Honor of Kings</h5>
+                                </div>
+                            </div>
+                            <div>
+                                <button class="btn btn-success" style="width: auto; height: 28px; font-size: 12px">Tải
+                                    về
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://static-sg.winudf.com/wupload/xy/aprojectadmin/1xUJCiBZ.png?imageMogr2/thumbnail/360x/format/webp"
+                             class="d-block w-100" alt="Third slide">
+                        <div class="carousel-caption d-flex justify-content-between align-items-center pt-3 pb-3 mt-3">
+                            <div class="d-flex align-items-center">
+                                <img src="https://image.winudf.com/v2/user/admin/YWRtaW5f5LyB5Lia5b6u5L-h5oiq5Zu-XzE3Mzk4NjM3NTY5NDU4LnBuZ18xNzM5ODY0MDE0NDkx/icon.webp?w=48&fakeurl=1&type=.webp"
+                                     alt="Honor of Kings"
+                                     class="me-3"
+                                     width="32" height="32">
+                                <div>
+                                    <h5 class="mb-1">Honor of Kings</h5>
+                                </div>
+                            </div>
+                            <div>
+                                <button class="btn btn-success" style="width: auto; height: 28px; font-size: 12px">Tải
+                                    về
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Nút điều hướng Previous/Next -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Trò chơi</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Ứng dụng</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="articleDropDown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Các bài báo
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="articleDropDown">
-                                <li><a class="dropdown-item" href="#">Tin Tức</a></li>
-                                <li><a class="dropdown-item" href="#">Nhận xét</a></li>
-                                <li><a class="dropdown-item" href="#">How To</a></li>
-                                <li><a class="dropdown-item" href="#">Chủ đề</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="productForDropDown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                               Sản phẩm của
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="productForDropDown">
-                                <li><a class="dropdown-item" href="#">Ứng dụng apkPure</a></li>
-                                <li><a class="dropdown-item" href="#">Tải về apkPure</a></li>
-                                <li><a class="dropdown-item" href="#">window App</a></li>
-                                <li><a class="dropdown-item" href="#">iphone App</a></li>
-                                <li><a class="dropdown-item" href="#">Cửa hàng trò chơi</a></li>
-                                <li><a class="dropdown-item" href="#">Pre-registry</a></li>
-                                <li><a class="dropdown-item" href="#">Mở rộng scom</a></li>
-                                <li><a class="dropdown-item" href="#">TVOnic</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <form class="search d-flex">
-                        <i class="fa fa-search"></i>
-                    </form>
-                    <div class="avatar">
-                        <a href="#">
-                            <img src="https://static.apkpure.com/www/static/imgs/no_login_v3.png" alt="" width="35" height="35">
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <div class="wrapper bg-white px-3 pt-2 mt-3">
+                <div class="text-more mb-1">
+                    <span class="card-text">Phát hiện</span>
+                    <i class="fa fa-chevron-right"></i>
+                </div>
+                <div class="list-wrapper no-scrollbar d-flex">
+                    <a href="#" class="text-decoration-none wrapper-content">
+                        <div class="body-wrapper">
+                            <img src="https://image.winudf.com/v2/image1/Y29tLnByb3hpbWFiZXRhLm1mLnVhbW9faWNvbl8xNzI4NjQyMTE2XzA0NQ/icon.webp?w=102&fakeurl=1&type=.webp"
+                                 alt="" class="wrapper-image rounded">
+                        </div>
+                        <span class="wrapper-title text-truncate">Arena Breakout</span>
+                    </a>
+                    <a href="#" class="text-decoration-none wrapper-content">
+                        <div class="body-wrapper">
+                            <img src="https://image.winudf.com/v2/image1/Y29tLnByb3hpbWFiZXRhLm1mLnVhbW9faWNvbl8xNzI4NjQyMTE2XzA0NQ/icon.webp?w=102&fakeurl=1&type=.webp"
+                                 alt="" class="wrapper-image rounded">
+                        </div>
+                        <span class="wrapper-title text-truncate">Arena Breakout</span>
+                    </a>
+                    <a href="#" class="text-decoration-none wrapper-content">
+                        <div class="body-wrapper">
+                            <img src="https://image.winudf.com/v2/image1/Y29tLnByb3hpbWFiZXRhLm1mLnVhbW9faWNvbl8xNzI4NjQyMTE2XzA0NQ/icon.webp?w=102&fakeurl=1&type=.webp"
+                                 alt="" class="wrapper-image rounded">
+                        </div>
+                        <span class="wrapper-title text-truncate">Arena Breakout</span>
+                    </a>
+                    <a href="#" class="text-decoration-none wrapper-content">
+                        <div class="body-wrapper">
+                            <img src="https://image.winudf.com/v2/image1/Y29tLnByb3hpbWFiZXRhLm1mLnVhbW9faWNvbl8xNzI4NjQyMTE2XzA0NQ/icon.webp?w=102&fakeurl=1&type=.webp"
+                                 alt="" class="wrapper-image rounded">
+                        </div>
+                        <span class="wrapper-title text-truncate">Arena Breakout</span>
+                    </a>
+                    <a href="#" class="text-decoration-none wrapper-content">
+                        <div class="body-wrapper">
+                            <img src="https://image.winudf.com/v2/image1/Y29tLnByb3hpbWFiZXRhLm1mLnVhbW9faWNvbl8xNzI4NjQyMTE2XzA0NQ/icon.webp?w=102&fakeurl=1&type=.webp"
+                                 alt="" class="wrapper-image rounded">
+                        </div>
+                        <span class="wrapper-title text-truncate">Arena Breakout</span>
+                    </a>
+                    <a href="#" class="text-decoration-none wrapper-content">
+                        <div class="body-wrapper">
+                            <img src="https://image.winudf.com/v2/image1/Y29tLnByb3hpbWFiZXRhLm1mLnVhbW9faWNvbl8xNzI4NjQyMTE2XzA0NQ/icon.webp?w=102&fakeurl=1&type=.webp"
+                                 alt="" class="wrapper-image rounded">
+                        </div>
+                        <span class="wrapper-title text-truncate">Arena Breakout</span>
+                    </a>
+                    <a href="#" class="text-decoration-none wrapper-content wrapper-content">
+                        <div class="body-wrapper">
+                            <img src="https://image.winudf.com/v2/image1/Y29tLnByb3hpbWFiZXRhLm1mLnVhbW9faWNvbl8xNzI4NjQyMTE2XzA0NQ/icon.webp?w=102&fakeurl=1&type=.webp"
+                                 alt="" class="wrapper-image rounded">
+                        </div>
+                        <span class="wrapper-title text-truncate">Arena Breakout</span>
+                    </a>
+                </div>
+            </div>
+            <div class="wrapper bg-white px-3 pt-2 mt-3">
+                <div class="text-more mb-1">
+                    <span class="card-text">Trò chơi phổ biến trong 24 giờ trước</span>
+                    <i class="fa fa-chevron-right"></i>
+                </div>
+                <div class="list-wrapper no-scrollbar d-flex">
+                    <a href="#" class="text-decoration-none wrapper-content">
+                        <div class="body-wrapper">
+                            <img src="https://image.winudf.com/v2/image1/Y29tLmVhLmdwLmZpZmFtb2JpbGVfaWNvbl8xNzMwNjk2MTMzXzAwOQ/icon.webp?w=102&fakeurl=1&type=.webp"
+                                 alt="" class="wrapper-image rounded">
+                        </div>
+                        <span class="wrapper-title text-truncate">EA SPORTS FC 25</span>
+                    </a>
+                    <a href="#" class="text-decoration-none wrapper-content">
+                        <div class="body-wrapper">
+                            <img src="https://image.winudf.com/v2/image1/Y29tLmVhLmdwLmZpZmFtb2JpbGVfaWNvbl8xNzMwNjk2MTMzXzAwOQ/icon.webp?w=102&fakeurl=1&type=.webp"
+                                 alt="" class="wrapper-image rounded">
+                        </div>
+                        <span class="wrapper-title text-truncate">EA SPORTS FC 25</span>
+                    </a>
+                    <a href="#" class="text-decoration-none wrapper-content">
+                        <div class="body-wrapper">
+                            <img src="https://image.winudf.com/v2/image1/Y29tLmVhLmdwLmZpZmFtb2JpbGVfaWNvbl8xNzMwNjk2MTMzXzAwOQ/icon.webp?w=102&fakeurl=1&type=.webp"
+                                 alt="" class="wrapper-image rounded">
+                        </div>
+                        <span class="wrapper-title text-truncate">EA SPORTS FC 25</span>
+                    </a>
+                    <a href="#" class="text-decoration-none wrapper-content">
+                        <div class="body-wrapper">
+                            <img src="https://image.winudf.com/v2/image1/Y29tLmVhLmdwLmZpZmFtb2JpbGVfaWNvbl8xNzMwNjk2MTMzXzAwOQ/icon.webp?w=102&fakeurl=1&type=.webp"
+                                 alt="" class="wrapper-image rounded">
+                        </div>
+                        <span class="wrapper-title text-truncate">EA SPORTS FC 25</span>
+                    </a>
+                    <a href="#" class="text-decoration-none wrapper-content">
+                        <div class="body-wrapper">
+                            <img src="https://image.winudf.com/v2/image1/Y29tLmVhLmdwLmZpZmFtb2JpbGVfaWNvbl8xNzMwNjk2MTMzXzAwOQ/icon.webp?w=102&fakeurl=1&type=.webp"
+                                 alt="" class="wrapper-image rounded">
+                        </div>
+                        <span class="wrapper-title text-truncate">EA SPORTS FC 25</span>
+                    </a>
+                    <a href="#" class="text-decoration-none wrapper-content">
+                        <div class="body-wrapper">
+                            <img src="https://image.winudf.com/v2/image1/Y29tLmVhLmdwLmZpZmFtb2JpbGVfaWNvbl8xNzMwNjk2MTMzXzAwOQ/icon.webp?w=102&fakeurl=1&type=.webp"
+                                 alt="" class="wrapper-image rounded">
+                        </div>
+                        <span class="wrapper-title text-truncate">EA SPORTS FC 25</span>
+                    </a>
+                </div>
+            </div>
+            <div class="wrapper bg-white px-3 pt-2 mt-3">
+                <div class="text-more mb-1">
+                    <span class="card-text">Ứng dụng phổ biến trong 24 giờ trước</span>
+                    <i class="fa fa-chevron-right"></i>
+                </div>
+                <div class="list-wrapper no-scrollbar d-flex">
+                    <a href="#" class="text-decoration-none wrapper-content">
+                        <div class="body-wrapper">
+                            <img src="https://image.winudf.com/v2/image1/Y29tLmhlbGxvLnB1cnJfaWNvbl8xNzMxMDY4OTkxXzA3Mw/icon.webp?w=102&fakeurl=1&type=.webp"
+                                 alt="" class="wrapper-image rounded">
+                        </div>
+                        <span class="wrapper-title text-truncate">Purrr</span>
+                    </a>
+                    <a href="#" class="text-decoration-none wrapper-content">
+                        <div class="body-wrapper">
+                            <img src="https://image.winudf.com/v2/image1/Y29tLmhlbGxvLnB1cnJfaWNvbl8xNzMxMDY4OTkxXzA3Mw/icon.webp?w=102&fakeurl=1&type=.webp"
+                                 alt="" class="wrapper-image rounded">
+                        </div>
+                        <span class="wrapper-title text-truncate">Purrr</span>
+                    </a>
+                    <a href="#" class="text-decoration-none wrapper-content">
+                        <div class="body-wrapper">
+                            <img src="https://image.winudf.com/v2/image1/Y29tLmhlbGxvLnB1cnJfaWNvbl8xNzMxMDY4OTkxXzA3Mw/icon.webp?w=102&fakeurl=1&type=.webp"
+                                 alt="" class="wrapper-image rounded">
+                        </div>
+                        <span class="wrapper-title text-truncate">Purrr</span>
+                    </a>
+                    <a href="#" class="text-decoration-none wrapper-content">
+                        <div class="body-wrapper">
+                            <img src="https://image.winudf.com/v2/image1/Y29tLmhlbGxvLnB1cnJfaWNvbl8xNzMxMDY4OTkxXzA3Mw/icon.webp?w=102&fakeurl=1&type=.webp"
+                                 alt="" class="wrapper-image rounded">
+                        </div>
+                        <span class="wrapper-title text-truncate">Purrr</span>
+                    </a>
+                    <a href="#" class="text-decoration-none wrapper-content">
+                        <div class="body-wrapper">
+                            <img src="https://image.winudf.com/v2/image1/Y29tLmhlbGxvLnB1cnJfaWNvbl8xNzMxMDY4OTkxXzA3Mw/icon.webp?w=102&fakeurl=1&type=.webp"
+                                 alt="" class="wrapper-image rounded">
+                        </div>
+                        <span class="wrapper-title text-truncate">Purrr</span>
+                    </a>
+                    <a href="#" class="text-decoration-none wrapper-content">
+                        <div class="body-wrapper">
+                            <img src="https://image.winudf.com/v2/image1/Y29tLmhlbGxvLnB1cnJfaWNvbl8xNzMxMDY4OTkxXzA3Mw/icon.webp?w=102&fakeurl=1&type=.webp"
+                                 alt="" class="wrapper-image rounded">
+                        </div>
+                        <span class="wrapper-title text-truncate">Purrr</span>
+                    </a>
+                    <a href="#" class="text-decoration-none wrapper-content wrapper-content">
+                        <div class="body-wrapper">
+                            <img src="https://image.winudf.com/v2/image1/Y29tLmhlbGxvLnB1cnJfaWNvbl8xNzMxMDY4OTkxXzA3Mw/icon.webp?w=102&fakeurl=1&type=.webp"
+                                 alt="" class="wrapper-image rounded">
+                        </div>
+                        <span class="wrapper-title text-truncate">Purrr</span>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <!--Sidebar-->
+        <aside class="col-lg-3">
+            <div class="bg-white p-3 popular-search h-auto">
+                <form action="get" class="d-flex search-box justify-content-between align-content-center">
+                    <div class="form-search w-100">
+                        <input type="text" class="form-control" title="Nhập từ khóa tìm kiếm"
+                               placeholder="Nhập từ khóa tìm kiếm">
+                    </div>
+                    <div class="text-btn btn-search">
+                        <button type="submit" class="form-control fa fa-search"></button>
+                    </div>
+                </form>
+                <div class="trending-title mt-2 mb-2">Tìm kiếm thịnh hành</div>
+                <div class="trending-content">
+                    <a href="https://apkpure.com/vn/search?q=sakura%20school%20simulator&amp;ici=hot_index"
+                       title="sakura school simulator" class="bg-trending-content text-decoration-none">sakura school
+                        simulator</a>
+                    <a href="https://apkpure.com/vn/search?q=bida&amp;ici=hot_index" title="bida"
+                       class="bg-trending-content text-decoration-none">bida</a>
+                    <a href="https://apkpure.com/vn/search?q=ace%20racer&amp;ici=hot_index" title="ace racer"
+                       class="bg-trending-content text-decoration-none">ace racer</a>
+                    <a href="https://apkpure.com/vn/search?q=xapk&amp;ici=hot_index" title="xapk"
+                       class="bg-trending-content text-decoration-none">xapk</a>
+                    <a href="https://apkpure.com/vn/search?q=naruto&amp;ici=hot_index" title="naruto"
+                       class="bg-trending-content text-decoration-none">naruto</a>
+                    <a href="https://apkpure.com/vn/search?q=solo%20leveling%3A%20arise&amp;ici=hot_index"
+                       title="solo leveling: arise" class="bg-trending-content text-decoration-none">solo leveling:
+                        arise</a>
+                    <a href="https://apkpure.com/vn/search?q=zarchiver&amp;ici=hot_index" title="zarchiver"
+                       class="bg-trending-content text-decoration-none">zarchiver</a>
+                    <a href="https://apkpure.com/vn/search?q=arena%20of%20valor&amp;ici=hot_index"
+                       title="arena of valor" class="bg-trending-content text-decoration-none">arena of valor</a>
+                    <a href="https://apkpure.com/vn/search?q=granny&amp;ici=hot_index" title="granny"
+                       class="bg-trending-content text-decoration-none">granny</a>
+                    <a href="https://apkpure.com/vn/search?q=messenger&amp;ici=hot_index" title="messenger"
+                       class="bg-trending-content text-decoration-none">messenger</a>
+                </div>
+            </div>
+
+            <div class="bg-white p-3 download-app-social mt-3">
+                <div class="social-wrapper d-flex">
+                    <img src="https://image.winudf.com/v2/upload/images/icon.png/image.webp?fakeurl=1&w=90&type=.webp"
+                         alt="" class="social-img" width="40" height="40">
+                    <div class="social-desc px-2">
+                        <div class="one-line">
+                                 <span>Use APKRure App
+                                <span class="score">
+                                    <i class="fa fa-star">8.3</i>
+                                </span>
+                            </span>
+                        </div>
+                        <div class="one-line">
+                            <span class="text-truncate"
+                                  style="font-size: 12px">Trình cài đặt XAPK/APK nhanh chóng</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="shortcut-download my-2">
+                    <button class="btn btn-success w-100">Tải về</button>
+                    <div class="d-flex justify-content-center align-items-center py-2 support-download">
+                        <i class="fa fa-download pr-2"></i>
+                        Thêm vào màn hình chính
+                    </div>
+
+                    <div class="social-network d-flex">
+                        <a href="" class="network telegram">
+                            <img src="img/icon-telegram.svg" alt="">
+                            <span>Telegram</span>
+                        </a>
+                        <a href="" class="network facebook">
+                            <img src="img/icon-facebook.svg" alt="">
+                            <span>Facebook</span>
+                        </a>
+                        <a href="" class="network twitter">
+                            <img src="img/icon-twitter-v1.svg" alt="">
+                            <span>Twitter X</span>
+                        </a>
+                        <a href="" class="network youtube">
+                            <img src="img/icon-youtube.svg" alt="">
+                            <span>Youtube</span>
                         </a>
                     </div>
                 </div>
             </div>
-        </nav>
-    </header>
 
-    <!-- Container chính -->
-    <div class="container main-body">
-        <div class="row">
-            <!-- Cột cho Slider (Carousel) -->
-            <div class="col-lg-9 mb-3">
-                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                    <!-- Indicators (chấm tròn) -->
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                                class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                                aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                                aria-label="Slide 3"></button>
-                    </div>
-
-                    <!-- Nội dung các slide -->
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="https://image.winudf.com/v2/image1/Y29tLmVuZmxpY2suYW5kcm9pZC5UZXh0Tm93X2Jhbm5lcl8xNzMzMjc0NzQwXzA3NA/banner.webp?w=360&fakeurl=1&type=.webp"
-                                 class="d-block w-100" alt="First slide">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="https://static-sg.winudf.com/wupload/xy/aprojectadmin/og7m5fyT.jpg?imageMogr2/thumbnail/360x/format/webp"
-                                 class="d-block w-100" alt="Second slide">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="https://static-sg.winudf.com/wupload/xy/aprojectadmin/1xUJCiBZ.png?imageMogr2/thumbnail/360x/format/webp"
-                                 class="d-block w-100" alt="Third slide">
-                        </div>
-                    </div>
-
-                    <!-- Nút điều hướng Previous/Next -->
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
+            <div class="editor-choice bg-white p-3 mt-3">
+                <div class="text-truncate">
+                    Lựa chọn của biên tập hàng đầu
+                    <i class="fa fa-chevron-right"></i>
+                </div>
+                <div class="list-editor-choice">
+                    <a href="" class="text-decoration-none">
+                        <img src="img/1.jpg" alt="" class="img-editor-choice">
+                    </a>
+                    <a href="" class="text-decoration-none">
+                        <img src="img/2.jpg" alt="" class="img-editor-choice">
+                    </a>
+                    <a href="" class="text-decoration-none">
+                        <img src="img/3.jpg" alt="" class="img-editor-choice">
+                    </a>
+                    <a href="" class="text-decoration-none">
+                        <img src="img/4.jpg" alt="" class="img-editor-choice">
+                    </a>
+                    <a href="" class="text-decoration-none">
+                        <img src="img/5.jpg" alt="" class="img-editor-choice">
+                    </a>
                 </div>
             </div>
-
-            <!-- Cột cho Sidebar (related content) -->
-            <aside class="col-lg-3">
-                <div class="bg-white p-3 rounded popular-search">
-                    <h5 class="mb-3">Sidebar / Nội dung liên quan</h5>
-                    <p>Đây là khu vực bạn có thể đặt thông tin liên quan, các nút tải xuống, hoặc các mục quảng cáo, v.v.</p>
-                </div>
-
-                <div class="bg-white p-3 rounded download-app-social mt-3">
-                    <h5 class="mb-3">Sidebar / Nội dung liên quan</h5>
-                    <p>Đây là khu vực bạn có thể đặt thông tin liên quan, các nút tải xuống, hoặc các mục quảng cáo, v.v.</p>
-                </div>
-            </aside>
-        </div>
+        </aside>
     </div>
-    <footer id="footer">
+</div>
+<footer id="footer">
 
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </body>
 </html>
