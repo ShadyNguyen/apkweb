@@ -168,7 +168,12 @@ ul, li, a {
     color: white;
 }
 
-.score .fa.fa-star {
+.fa {
+    font-size: 12px !important;
+}
+
+.score .fa.fa-star,
+.wrapper-info .fa.fa-star{
     color: #FA8B16;
     font-size: 12px;
 }
@@ -214,6 +219,10 @@ ul, li, a {
 }
 
 
+.wrapper-content-col-3 {
+    width: 288px;
+    height: auto;
+}
 
 .footer-container {
     padding: 0 80px !important;
