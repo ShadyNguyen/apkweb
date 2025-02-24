@@ -13,6 +13,34 @@ body {
     color: #5E5E5E;
 }
 
+ul {
+    padding: 0 !important;
+}
+
+a {
+    color: #8b8b8b !important;
+}
+
+ul, li, a {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.one-line {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.double-line {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
 #header {
     line-height: 45px;
     position : fixed;
@@ -112,7 +140,7 @@ body {
 
 .search-box {
     border-radius: 5px;
-    border: 1px solid #24CD77;
+    border: 2px solid #24CD77;
 }
 
 .btn-search {
@@ -183,4 +211,10 @@ body {
 }
 .social-network .youtube::before {
     background-image: url("https://static.apkpure.com/www/static/imgs/icon-youtube.svg");
+}
+
+
+
+.footer-container {
+    padding: 0 80px !important;
 }
