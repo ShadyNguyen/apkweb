@@ -186,38 +186,42 @@ ul, li, a {
     font-weight: 500;
     font-size: 12px;
     line-height: 16px;
+    text-decoration: none;
 }
 
-.social-network .telegram {
+.social-network .network.telegram span{
     color: #2AABEE;
 }
 
-.social-network .facebook {
+.social-network .network.facebook span{
     color: #3B57A0;
 }
 
-.social-network .twitter {
+.social-network .network.twitter span{
     color: #00A6ED;
 }
 
-.social-network .youtube {
+.social-network .network.youtube span{
     color: #DD1829;
 }
 
 .social-network .telegram::before {
-    background-image: url("https://static.apkpure.com/www/static/imgs/icon-telegram.svg");
+    background-image: url('img/icon-telegram.svg');
 }
 
 .social-network .facebook::before {
-    background-image: url("https://static.apkpure.com/www/static/imgs/icon-facebook.svg");
+    background-image: url('img/icon-facebook.svg');
 }
 .social-network .twitter::before {
-    background-image: url("https://static.apkpure.com/www/static/imgs/icon-twitter-v1.svg");
+    background-image: url('img/icon-twitter-v1.svg');
 }
 .social-network .youtube::before {
-    background-image: url("https://static.apkpure.com/www/static/imgs/icon-youtube.svg");
+    background-image: url('img/icon-youtube.svg');;
 }
 
+.list-editor-choice .info {
+
+}
 
 .wrapper-content-col-3 {
     width: 288px;
